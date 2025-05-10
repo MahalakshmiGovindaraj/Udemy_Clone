@@ -7,3 +7,4 @@ A static, Udemy’s main landing page is built with only HTML and CSS. This proj
 **CSS Flexbox:** Utilizes modern CSS techniques (Flexbox) to align elements such as navigation menus, course cards, and multi-column sections.
 
 **Link:-**
+https://mahalakshmigovindaraj.github.io/Udemy_Clone/
