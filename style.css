@@ -12,9 +12,15 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    border-bottom: sofvlid black 1px;
+    border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+
 }
 
 .navbar-section__one__title {
@@ -35,6 +41,7 @@ body {
     border: none;
     width: 60%;
     font-size: 15px;
+    background-color: transparent;
 }
 
 .navbar-section__two input:focus {
@@ -46,6 +53,27 @@ body {
     gap: 15px;
     margin-right: 10px;
     align-items: center;
+}
+
+.my_learning {
+    position: relative;
+    cursor: pointer;
+}
+
+.my_learning_popup {
+    position: absolute;
+    background-color: white;
+    border: solid 2px black;
+    width: 100px;
+    padding: 10px;
+    top: 150%;
+    right: 0;
+    display: none;
+
+}
+
+.my_learning:hover .my_learning_popup {
+    display: block;
 }
 
 .Categories {
@@ -60,11 +88,50 @@ body {
     border-radius: 30px;
     color: white;
     padding: 10px;
+    border: solid purple 1px;
 
+
+}
+
+.Categories p:hover {
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.sale-image__offer {
+    width: 35%;
+    background-color: white;
+    position: absolute;
+    border: 2px solid black;
+    padding: 2%;
+    top: 10%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .sale-image img {
     width: 100%;
+}
+
+.sale-image {
+    position: relative;
 }
 
 .Recommendations {
